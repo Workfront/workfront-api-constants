@@ -7,7 +7,9 @@
     "dist"
   ],
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "1.8.10"
+  },
   "scripts": {
     "build": "tsc --module umd --allowJs --outDir dist/umd/ src/*.ts && tsc --target es2015 --declaration --outDir dist/ src/*.ts",
     "test": "exit 0"
@@ -26,12 +28,7 @@
   "contributors": [
     "Hovhannes Babayan <bhovhannes@gmail.com>"
   ],
-  "licenses": [
-    {
-      "type": "Apache-2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
-    }
-  ],
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Workfront/workfront-api-constants/issues"
   },
