@@ -3,6 +3,14 @@
 
 Definitions for all constants which can be used to interact with Workfront API
 
+## Usage
+
+Published package contains definitions of constants in both UMD (ES5 syntax) and ES2015 format.
+1) `umd/constants.js` - Contains definitions for all Workfront API constants in UMD format (ES5 syntax)
+2) `constants.js` - Contains definitions for all Workfront API constants in ES2015 format
+3) `constants.d.ts` - Contains typings for exported constants
+
+
 ## Contributing
 
 We welcome contributions of all kinds from anyone. It can be either new example or fix or documentation improvement. Please read these guidelines:
