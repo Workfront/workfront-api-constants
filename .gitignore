@@ -1,0 +1,13 @@
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+node_modules
+
+# IntelliJ IDEA settings
+.idea
+*.iml
+
+# coverage reporter output
+coverage
+
+# generated folder
+dist

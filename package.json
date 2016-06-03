@@ -1,0 +1,41 @@
+{
+  "name": "workfront-api",
+  "version": "0.0.0",
+  "description": "Definitions for all constants which can be used to interact with Workfront API",
+  "main": "dist/constants.js",
+  "files": [
+      "dist"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "build": "tsc --module umd --allowJs --outDir dist/umd/ src/*.ts && tsc --target es2015 --declaration --outDir dist/ src/*.ts",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Workfront/workfront-api-constants.git"
+  },
+  "keywords": [
+    "Workfront",
+    "Constants",
+    "AtTask",
+    "API"
+  ],
+  "author": "Workfront",
+  "contributors": [
+    "Hovhannes Babayan <bhovhannes@gmail.com>"
+  ],
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Workfront/workfront-api-constants/issues"
+  },
+  "homepage": "https://github.com/Workfront/workfront-api-constants"
+}
