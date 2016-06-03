@@ -1,5 +1,5 @@
 {
-  "name": "workfront-api",
+  "name": "workfront-api-constants",
   "version": "1.0.0",
   "description": "Definitions for all constants which can be used to interact with Workfront API",
   "main": "dist/constants.js",
