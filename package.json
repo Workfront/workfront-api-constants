@@ -1,15 +1,13 @@
 {
   "name": "workfront-api",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Definitions for all constants which can be used to interact with Workfront API",
   "main": "dist/constants.js",
   "files": [
-      "dist"
+    "dist"
   ],
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "build": "tsc --module umd --allowJs --outDir dist/umd/ src/*.ts && tsc --target es2015 --declaration --outDir dist/ src/*.ts",
     "test": "exit 0"
