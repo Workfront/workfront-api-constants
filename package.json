@@ -11,7 +11,8 @@
     "typescript": "2.1.5"
   },
   "scripts": {
-    "build": "tsc --module umd --allowJs --outDir dist/umd/ src/*.ts && tsc --target es2015 --declaration --outDir dist/ src/*.ts",
+    "prepublish": "npm run build",
+    "build": "tsc --module umd --outDir dist/umd/ src/*.ts && tsc --target es2015 --declaration --outDir dist/ src/*.ts",
     "test": "exit 0"
   },
   "repository": {
