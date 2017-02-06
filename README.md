@@ -1,4 +1,6 @@
 # workfront-api-constants
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Workfront/workfront-api-constants.svg)](https://greenkeeper.io/)
 [![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![Apache v2 License][license-image]][license-url] [![Build Status][travis-image]][travis-url]
 
 Definitions for all constants which can be used to interact with Workfront API
