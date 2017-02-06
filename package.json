@@ -8,7 +8,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "typescript": "1.8.10"
+    "typescript": "2.1.5"
   },
   "scripts": {
     "build": "tsc --module umd --allowJs --outDir dist/umd/ src/*.ts && tsc --target es2015 --declaration --outDir dist/ src/*.ts",
