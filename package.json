@@ -9,7 +9,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "typescript": "2.1.5"
+    "typescript": "2.1.6"
   },
   "scripts": {
     "prepublish": "npm run build",
