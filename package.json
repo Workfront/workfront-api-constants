@@ -2,18 +2,23 @@
   "name": "workfront-api-constants",
   "version": "1.0.5",
   "description": "Definitions for all constants which can be used to interact with Workfront API",
-  "main": "dist/constants.js",
+  "main": "dist/umd/constants.js",
   "types": "./dist/constants.d.ts",
+  "module": "dist/constants.js",
+  "jsnext:main": "dist/constants.js",
   "files": [
     "dist"
   ],
   "dependencies": {},
   "devDependencies": {
+    "npm-run-all": "4.0.2",
     "typescript": "2.2.1"
   },
   "scripts": {
     "prepublish": "npm run build",
-    "build": "tsc --module umd --outDir dist/umd/ src/*.ts && tsc --target es2015 --declaration --outDir dist/ src/*.ts",
+    "build:umd": "tsc --removeComments --module umd --outDir dist/umd/ src/*.ts",
+    "build:es": "tsc --module es6 --target es5 --declaration --outDir dist/ src/*.ts",
+    "build": "run-p build:**",
     "test": "exit 0"
   },
   "repository": {
