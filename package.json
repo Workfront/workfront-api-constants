@@ -12,7 +12,7 @@
   "dependencies": {},
   "devDependencies": {
     "npm-run-all": "4.0.2",
-    "typescript": "2.2.2"
+    "typescript": "2.3.1"
   },
   "scripts": {
     "prepublish": "npm run build",
