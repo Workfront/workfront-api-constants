@@ -10,3 +10,4 @@ notifications:
 node_js:
   - "6"
   - "4"
+  - "10"
