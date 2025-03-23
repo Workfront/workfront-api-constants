@@ -1,6 +1,6 @@
 {
   "name": "workfront-api-constants",
-  "version": "2.0.1",
+  "version": "2.0.0",
   "description": "Definitions for all constants which can be used to interact with Workfront API",
   "main": "dist/umd/constants.js",
   "types": "./dist/constants.d.ts",
