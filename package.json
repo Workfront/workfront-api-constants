@@ -1,5 +1,5 @@
 {
-  "name": "workfront-api-constants",
+  "name": "@workfront/api-constants",
   "version": "2.0.0",
   "description": "Definitions for all constants which can be used to interact with Workfront API",
   "main": "dist/umd/constants.js",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Workfront/workfront-api-constants.git"
+    "url": "git+https://github.com/Workfront/workfront-api-constants.git"
   },
   "keywords": [
     "Workfront",
