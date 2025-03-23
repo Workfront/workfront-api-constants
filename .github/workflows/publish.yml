@@ -1,0 +1,48 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      SEMVER_TYPE:
+        description: 'Semver type'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  publish-npm:
+    environment: publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check if on main branch
+        run: |
+          if [[ $GITHUB_REF != 'refs/heads/main' ]]; then
+            echo "This workflow must run on the 'main' branch."
+            exit 1
+          fi
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@workfront'
+      - run: npm ci
+      - name: Bump package version
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          echo "Bumping version as ${{ github.event.inputs.SEMVER_TYPE }}"
+          npm version ${{ github.event.inputs.SEMVER_TYPE }}
+          VERSION=$(node -p "require('./package.json').version")
+          git push origin main --follow-tags
+      - run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

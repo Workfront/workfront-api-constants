@@ -1,6 +1,6 @@
-# workfront-api-constants
+# @workfront/api-constants
 
-[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![Apache v2 License][license-image]][license-url] [![Build Status][travis-image]][travis-url]
+[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![Apache v2 License][license-image]][license-url]
 
 Definitions for all constants which can be used to interact with Workfront API
 
@@ -45,9 +45,6 @@ See the top-level file `LICENSE` and
 [license-image]: http://img.shields.io/badge/license-APv2-blue.svg?style=flat
 [license-url]: LICENSE
 
-[npm-url]: https://www.npmjs.org/package/workfront-api-constants
-[npm-version-image]: https://img.shields.io/npm/v/workfront-api-constants.svg?style=flat
-[npm-downloads-image]: https://img.shields.io/npm/dm/workfront-api-constants.svg?style=flat
-
-[travis-url]: https://travis-ci.org/Workfront/workfront-api-constants
-[travis-image]: https://img.shields.io/travis/Workfront/workfront-api-constants.svg?style=flat
+[npm-url]: https://www.npmjs.org/package/@workfront/api-constants
+[npm-version-image]: https://img.shields.io/npm/v/@workfront/api-constants.svg?style=flat
+[npm-downloads-image]: https://img.shields.io/npm/dm/@workfront/api-constants.svg?style=flat
