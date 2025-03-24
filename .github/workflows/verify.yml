@@ -20,5 +20,5 @@ jobs:
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
           scope: '@workfront'
-      - run: npm ci
+      - run: npm ci --no-fund --no-audit
       - run: npm run build
